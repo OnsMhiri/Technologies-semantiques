@@ -9,7 +9,7 @@ Ce projet a pour but de modéliser le domaine de la santé mentale en intégrant
 
 Les relations principales mises en place sont :
 - **aSymptome** (avec sous-propriétés *Physique* 💪 et *Psychologique* 🧠)
-- **diagnostiquéAvec** (exemple : *Alice diagnostiquéAvec Dépression*)
+- **diagnostiqueAvec** (exemple : *Alice diagnostiquéAvec Dépression*)
 - **prendsTest** (exemple : *Alice prendsTest BeckDepressionInventory*)
 - **recommandeIntervention** (exemple : *Dépression recommandeIntervention CBT*)
 
@@ -62,7 +62,7 @@ Ce projet vise à construire une ontologie détaillée pour la santé mentale en
 - **aSymptome**  
   - **Physique** 💪  
   - **Psychologique** 🧠
-- **diagnostiquéAvec**  
+- **diagnostiqueAvec**  
   *(Lie un Patient à un Trouble Psychologique, ex. : Alice diagnostiquéAvec Dépression)*
 - **prendsTest**  
   *(Lie un Patient à un Test, ex. : Alice prendsTest BeckDepressionInventory)*
@@ -74,12 +74,12 @@ Ce projet vise à construire une ontologie détaillée pour la santé mentale en
 | **Catégorie**             | **Élément Général**         | **Sous-éléments / Relations**                                                                                                                               |
 |---------------------------|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Classes : Patient**     | Patient 👤                  | - Adulte<br>- Enfant                                                                                                                                        |
-| **Classes : Symptômes**   | Symptômes 🤒                | (Regroupe l'ensemble des symptômes)                                                                                                                         |
+| **Classes : Symptômes**   | Symptomes 🤒                | (Regroupe l'ensemble des symptômes)                                                                                                                         |
 | **Classes : Troubles**    | TroublePsychologique 🧩     | - Neurodéveloppemental<br>- De humeur<br>- De personnalité                                                                                                  |
 | **Classes : Test**        | Test 📝                     | (Différents tests de diagnostic)                                                                                                                            |
 | **Classes : Intervention**| Intervention 💊             | (Interventions thérapeutiques)                                                                                                                              |
 | **Propriétés : aSymptome**| aSymptome                  | - Physique 💪<br>- Psychologique 🧠                                                                                                                           |
-| **Autres Propriétés**     | diagnostiquéAvec            | Lie un Patient à un Trouble Psychologique                                                                                                                   |
+| **Autres Propriétés**     | diagnostiqueAvec            | Lie un Patient à un Trouble Psychologique                                                                                                                   |
 |                           | prendsTest                  | Lie un Patient à un Test                                                                                                                                        |
 |                           | recommandeIntervention      | Lie un Trouble Psychologique à une Intervention                                                                                                             |
 
