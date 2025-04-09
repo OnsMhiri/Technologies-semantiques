@@ -1,6 +1,6 @@
-# 🧠 Ontologie pour la Santé Mentale
+# 🧠 Ontologie pour la Psychologie
 
-Ce projet a pour but de modéliser le domaine de la santé mentale en intégrant les concepts suivants :
+Ce projet a pour but de modéliser le domaine de la psychologie en intégrant les concepts suivants :
 1. **Patient** 👤
 2. **Symptômes** 🤒
 3. **Troubles Psychologiques** 🧩
@@ -9,7 +9,7 @@ Ce projet a pour but de modéliser le domaine de la santé mentale en intégrant
 
 Les relations principales mises en place sont :
 - **aSymptome** (avec sous-propriétés *Physique* 💪 et *Psychologique* 🧠)
-- **diagnostiqueAvec** (exemple : *Alice diagnostiquéAvec Dépression*)
+- **diagnostiquéAvec** (exemple : *Alice diagnostiquéAvec Dépression*)
 - **prendsTest** (exemple : *Alice prendsTest BeckDepressionInventory*)
 - **recommandeIntervention** (exemple : *Dépression recommandeIntervention CBT*)
 
@@ -62,7 +62,7 @@ Ce projet vise à construire une ontologie détaillée pour la santé mentale en
 - **aSymptome**  
   - **Physique** 💪  
   - **Psychologique** 🧠
-- **diagnostiqueAvec**  
+- **diagnostiquéAvec**  
   *(Lie un Patient à un Trouble Psychologique, ex. : Alice diagnostiquéAvec Dépression)*
 - **prendsTest**  
   *(Lie un Patient à un Test, ex. : Alice prendsTest BeckDepressionInventory)*
@@ -74,16 +74,18 @@ Ce projet vise à construire une ontologie détaillée pour la santé mentale en
 | **Catégorie**             | **Élément Général**         | **Sous-éléments / Relations**                                                                                                                               |
 |---------------------------|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Classes : Patient**     | Patient 👤                  | - Adulte<br>- Enfant                                                                                                                                        |
-| **Classes : Symptômes**   | Symptomes 🤒                | (Regroupe l'ensemble des symptômes)                                                                                                                         |
+| **Classes : Symptômes**   | Symptômes 🤒                | (Regroupe l'ensemble des symptômes)                                                                                                                         |
 | **Classes : Troubles**    | TroublePsychologique 🧩     | - Neurodéveloppemental<br>- De humeur<br>- De personnalité                                                                                                  |
 | **Classes : Test**        | Test 📝                     | (Différents tests de diagnostic)                                                                                                                            |
 | **Classes : Intervention**| Intervention 💊             | (Interventions thérapeutiques)                                                                                                                              |
 | **Propriétés : aSymptome**| aSymptome                  | - Physique 💪<br>- Psychologique 🧠                                                                                                                           |
-| **Autres Propriétés**     | diagnostiqueAvec            | Lie un Patient à un Trouble Psychologique                                                                                                                   |
+| **Autres Propriétés**     | diagnostiquéAvec            | Lie un Patient à un Trouble Psychologique                                                                                                                   |
 |                           | prendsTest                  | Lie un Patient à un Test                                                                                                                                        |
 |                           | recommandeIntervention      | Lie un Trouble Psychologique à une Intervention                                                                                                             |
 
 ---
+### 🔍 Visualisation
+![psychologie](https://github.com/user-attachments/assets/b4a4c838-cd25-4661-a337-8e9655b1224b)
 
 ## 🌐 Namespaces Utilisés
 
@@ -98,14 +100,3 @@ Ce projet vise à construire une ontologie détaillée pour la santé mentale en
 
 Ces vocabulaires standard assurent l'interopérabilité de l'ontologie avec d'autres systèmes sémantiques.
 
----
-
-## 🔍 Exemples de Requêtes SPARQL
-
-### 1. Patients adultes avec symptômes physiques
-
-```sparql
-SELECT ?patient WHERE {
-  ?patient a :Adulte .
-  ?patient :aSymptomePhysique ?symptome .
-}
