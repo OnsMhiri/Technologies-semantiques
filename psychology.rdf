@@ -1,0 +1,432 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11/"
+     xml:base="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:foaf1="http://xmlns.com/foaf/0.1/"
+     xmlns:untitled-ontology-11="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altlabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altlabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#aSymptome -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#aSymptome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Symptome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#aSymptomePhysique -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#aSymptomePhysique">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#aSymptome"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Symptome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#aSymptomePsychologique -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#aSymptomePsychologique">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#aSymptome"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Symptome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#diagnostiqueAvec -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#diagnostiqueAvec">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroublePsychologique"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#prendsTest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#prendsTest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Test"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#recommandeIntervention -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#recommandeIntervention">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroublePsychologique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Intervention"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Adulte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Adulte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Enfant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Enfant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Intervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Intervention"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Patient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Symptome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Symptome"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Test"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroubleHumeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroubleHumeur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroublePsychologique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroubleNeurodeveloppement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroubleNeurodeveloppement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroublePsychologique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroublePersonnalite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroublePersonnalite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroublePsychologique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroublePsychologique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroublePsychologique"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Alice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Alice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Enfant"/>
+        <untitled-ontology-11:aSymptomePsychologique rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#trouble_attention"/>
+        <untitled-ontology-11:diagnostiqueAvec rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#tdah"/>
+        <untitled-ontology-11:prendsTest rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#WISC_V"/>
+        <foaf1:name>Alice</foaf1:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#BDI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#BDI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Test"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Karim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Karim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Adulte"/>
+        <untitled-ontology-11:aSymptomePsychologique rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#insomnie"/>
+        <untitled-ontology-11:diagnostiqueAvec rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#depression"/>
+        <untitled-ontology-11:prendsTest rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#BDI"/>
+        <foaf1:name>Karim</foaf1:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Lina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Lina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Enfant"/>
+        <untitled-ontology-11:diagnostiqueAvec rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#autisme"/>
+        <untitled-ontology-11:prendsTest rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#STAI"/>
+        <dc:title>Elle est diagnostiqué avec autisme</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#MMPI_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#MMPI_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Test"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#PHQ_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#PHQ_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Test"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#STAI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#STAI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Test"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TCC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TCC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Intervention"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#WISC_V -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#WISC_V">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Test"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Youssef -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Youssef">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Adulte"/>
+        <untitled-ontology-11:aSymptomePhysique rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#anxiete"/>
+        <untitled-ontology-11:aSymptomePhysique rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#fatigue_chronique"/>
+        <dc:title>Youssef un adulte</dc:title>
+        <skos:prefLabel>Patient souffrant de la fatigue chronique</skos:prefLabel>
+        <foaf1:name>Youssef</foaf1:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#anxiete -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#anxiete">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Symptome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#autisme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#autisme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroubleNeurodeveloppement"/>
+        <untitled-ontology-11:recommandeIntervention rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#therapie_familiale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#bipolaire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#bipolaire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroubleHumeur"/>
+        <skos:altlabel>Trouble bipolaire</skos:altlabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#bordeline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#bordeline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroublePersonnalite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#depression -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#depression">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroubleHumeur"/>
+        <untitled-ontology-11:recommandeIntervention rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TCC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#fatigue_chronique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#fatigue_chronique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Symptome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#insomnie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#insomnie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Symptome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#maux_de_tete -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#maux_de_tete">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Symptome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#medicament -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#medicament">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Intervention"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#psychoeducation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#psychoeducation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Intervention"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#relaxation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#relaxation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Intervention"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#tdah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#tdah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#TroubleNeurodeveloppement"/>
+        <untitled-ontology-11:recommandeIntervention rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#psychoeducation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#therapie_familiale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#therapie_familiale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Intervention"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#trouble_attention -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#trouble_attention">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-11#Symptome"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
